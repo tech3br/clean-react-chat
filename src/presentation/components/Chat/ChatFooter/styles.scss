@@ -1,0 +1,31 @@
+@import "../../../styles/colors.scss";
+
+.ChatFooter {
+  background-color: $grey;
+  min-height: 8vh;
+
+  .Form {
+    display: flex;
+    width: 100%;
+
+    input {
+      width: 85%;
+      height: 8vh;
+      margin-right: 0px;
+      background-color: $white;
+    }
+
+    .ButtonContainer {
+      width: 15%;
+      height: 8vh;
+
+      .MessageBtn {
+        border: 1px solid $darkWhite;
+        height: 8vh;
+        width: 100%;
+        padding: 5px;
+        background-color: $orange;
+      }
+    }
+  }
+}

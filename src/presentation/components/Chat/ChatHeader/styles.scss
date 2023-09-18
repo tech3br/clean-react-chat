@@ -1,0 +1,84 @@
+@import "../../../styles/colors.scss";
+
+.ChatHeader {
+  background-color: $grey;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .ChatUser {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    .IconHeader {
+      color: $orange;
+      font-size: 18px;
+      margin-right: 10px;
+    }
+    span {
+      font-size: 18px;
+      text-transform: capitalize;
+    }
+  }
+  .ButtonContainer {
+    margin-right: 10px;
+
+    .InfoBtn {
+      border: 1px solid $darkWhite;
+      width: 150px;
+      height: 22px;
+      background-color: $orange;
+      color: $white;
+      font-weight: 700;
+      font-size: 16px;
+      border-radius: 30px;
+    }
+  }
+}
+
+.Popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  .PopupContent {
+    background-color: $black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .PopupContent h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: $white;
+  }
+
+  .PopupContent span {
+    text-transform: capitalize;
+  }
+
+  .PopupContent button {
+    background-color: $orange;
+    color: $white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid $darkWhite;
+    margin-top: 20px;
+  }
+
+  .PopupContent button:hover {
+    background-color: $orangeAux;
+  }
+}

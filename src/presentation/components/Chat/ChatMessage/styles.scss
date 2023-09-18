@@ -1,0 +1,32 @@
+@import "../../../styles/colors.scss";
+
+.MessageContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  background-color: rgba($grey, 0.4);
+  width: 50%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0px 5px 10px;
+  span + span {
+    margin-top: 5px;
+  }
+
+  .MessageSender,
+  .MessageReceiver {
+    font-weight: 600;
+    color: $green;
+    text-transform: capitalize;
+  }
+  .MessageReceiver {
+    color: $blue;
+  }
+  .MessageContent {
+    font-weight: 500;
+  }
+  .MessageDate {
+    font-weight: 400;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,17 @@
+@import "../../styles/colors.scss";
+
+.ChatContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+
+  .MessagesContainer {
+    background-color: $red;
+    min-height: 87vh;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: scroll;
+    padding-top: 10px;
+  }
+}

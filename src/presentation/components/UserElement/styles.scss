@@ -1,0 +1,49 @@
+@import "../../styles/colors.scss";
+
+.userContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $grey;
+  padding: 18px 10px;
+  border-radius: 4px;
+  margin-top: 15px;
+  .userInfo {
+    display: flex;
+    flex-direction: column;
+
+    .userName {
+      font-weight: bold;
+      color: $orange;
+      text-transform: capitalize;
+      &:hover {
+        cursor: pointer;
+        color: rgba($orange, 0.7);
+      }
+    }
+    .userLastSeen {
+      font-size: 12px;
+      margin-top: 20px;
+      color: $white;
+    }
+  }
+  .iconContainer {
+    background-color: $orange;
+    padding: 6px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+      background-color: rgba($orange, 0.7);
+    }
+    .icon {
+      color: $white;
+    }
+    span {
+      margin-left: 4px;
+      color: $white;
+    }
+  }
+}
